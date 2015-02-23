@@ -1,0 +1,10 @@
+﻿<Window x:Class="GamesWindow.Boxo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Boxo" Height="60" Width="60" MouseDoubleClick="Window_MouseDoubleClick" MouseLeftButtonDown="Window_MouseLeftButtonDown" MouseLeftButtonUp="Window_MouseLeftButtonUp" WindowStyle="None" ResizeMode="NoResize" MouseRightButtonDown="Window_MouseRightButtonDown" MouseEnter="Window_MouseEnter" MouseLeave="Window_MouseLeave" Closing="Window_Closing" ShowInTaskbar="False" Topmost="True" Cursor="Hand" Background="Transparent" AllowsTransparency="True">
+    <Grid>
+        <Image Width="60" Height="60" Name="BackGround" Source="Resources\more_function_bg.png" Opacity="0.7" RenderOptions.BitmapScalingMode="HighQuality" Stretch="Fill"/>
+        <Image Width="40" Height="40" Name="Rings" Source="Resources\Animation\loadcursor1.png" Stretch="Fill" Visibility="Hidden"/>
+        <Image Width="20" Name="Bubble1" Source="Resources\03-4.png" Margin="20,21,20,18" Stretch="Fill" RenderOptions.BitmapScalingMode="HighQuality"/>
+    </Grid>
+</Window>

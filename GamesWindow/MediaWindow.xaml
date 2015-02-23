@@ -1,0 +1,12 @@
+﻿<Window x:Class="GamesWindow.MediaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MediaWindow" WindowState="Maximized" WindowStyle="None" AllowsTransparency="True" Background="#55000000" Height="750" Width="750">
+    <Grid>
+        <Image Source="Resources\btn_close_H.png" Height="20" Width="20" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <Grid Height="750" Width="750">
+            <Image Source="G:\My App Creations\Resources\Background Images\bg_wizard.PNG" Opacity="0.7"/>
+            <Image Source="G:\My App Creations\Resources\Background Images\bg_wizard.PNG" Opacity="0.7"/>
+        </Grid>
+    </Grid>
+</Window>
