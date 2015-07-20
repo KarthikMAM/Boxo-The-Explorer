@@ -1,14 +1,14 @@
 ﻿<Window x:Class="GamesWindow.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Boxo Explorer" Height="500" Background="Transparent" Width="687" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" ShowInTaskbar="False" WindowStartupLocation="CenterOwner" Closing="Window_Closing" RenderOptions.BitmapScalingMode="HighQuality">
+        Title="Boxo Explorer" Height="500" Background="Transparent" Width="687" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" ShowInTaskbar="False" WindowStartupLocation="CenterOwner" Closing="Window_Closing" RenderOptions.BitmapScalingMode="HighQuality" FontFamily="Buxton Sketch">
     <Grid Height="500" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
         <Grid.Background>
-            <ImageBrush Opacity="0.8" ImageSource="Resources\smartsound_bg.PNG" RenderOptions.BitmapScalingMode="Fant"/>
+            <ImageBrush Opacity="0.8" ImageSource="Resources\smartsound_bg.png" RenderOptions.BitmapScalingMode="Fant"/>
         </Grid.Background>
-        <ListBox Name="Libraries" FontSize="20" ScrollViewer.HorizontalScrollBarVisibility="Hidden" FontFamily="OCR A Extended" FontWeight="ExtraBold" Foreground="AntiqueWhite" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" HorizontalAlignment="Left" Height="332" Margin="47,97,0,0" VerticalAlignment="Top" Width="234" SelectionChanged="Libraries_SelectionChanged" TextOptions.TextHintingMode="Animated" TextOptions.TextFormattingMode="Display">
+        <ListBox Name="Libraries" FontSize="20" ScrollViewer.HorizontalScrollBarVisibility="Hidden" FontWeight="ExtraBold" Foreground="AntiqueWhite" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" HorizontalAlignment="Left" Height="332" Margin="47,97,0,0" VerticalAlignment="Top" Width="234" SelectionChanged="Libraries_SelectionChanged" TextOptions.TextHintingMode="Animated" TextOptions.TextFormattingMode="Display">
             <ListBoxItem HorizontalAlignment="Center" Name="AddNew" HorizontalContentAlignment="Center" VerticalAlignment="Center">
-                <TextBox  MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" TextAlignment="Center" Foreground="AntiqueWhite" FontWeight="ExtraBold" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Name="AddNewButton" BorderThickness="0" BorderBrush="Transparent" TextWrapping="WrapWithOverflow" TextOptions.TextHintingMode="Animated" FontFamily="OCR A Extended" Background="Transparent" PreviewKeyDown="AddNewButton_PreviewKeyDown" AutoWordSelection="True" IsEnabled="True" Text="+" LostFocus="AddNewButton_LostFocus" GotFocus="AddNewButton_GotFocus" Height="Auto"/>
+                <TextBox  MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" TextAlignment="Center" Foreground="AntiqueWhite" FontWeight="ExtraBold" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Name="AddNewButton" BorderThickness="0" BorderBrush="Transparent" TextWrapping="WrapWithOverflow" TextOptions.TextHintingMode="Animated" Background="Transparent" PreviewKeyDown="AddNewButton_PreviewKeyDown" AutoWordSelection="True" IsEnabled="True" Text="+" LostFocus="AddNewButton_LostFocus" GotFocus="AddNewButton_GotFocus" Height="Auto"/>
             </ListBoxItem>
         </ListBox>
 
@@ -20,11 +20,11 @@
             </ScrollViewer>
         </Grid>
         <Image Name="LoadCursor" HorizontalAlignment="Left" Height="68" Margin="471,177,0,0" VerticalAlignment="Top" Width="67" Source="Resources\Animation\loadcursor1.png" Visibility="Hidden" IsEnabled="False"/>
-        <Label Content="©Kappspot" FontSize="15" FontWeight="ExtraBold" Foreground="AntiqueWhite" FontFamily="OCR A Extended" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="577,459,0,0" VerticalAlignment="Top" Width="97" Height="31"/>
+        <Label Content="©Kappspot" FontSize="15" FontWeight="ExtraBold" Foreground="AntiqueWhite" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="577,459,0,0" VerticalAlignment="Top" Width="97" Height="31"/>
         <Label Foreground="AntiqueWhite" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Margin="345,369,0,0" VerticalAlignment="Top" Width="329" Height="60" TextOptions.TextHintingMode="Animated" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
             <TextBlock TextAlignment="Center" Foreground="AntiqueWhite" FontWeight="Bold" FontSize="15" HorizontalAlignment="Center" Width="Auto" Height="Auto" Name="FileLabel" TextWrapping="Wrap" TextOptions.TextHintingMode="Animated" LineStackingStrategy="BlockLineHeight"/>
         </Label>
-        <Label Name="Category" Content="Category" HorizontalAlignment="Left" Margin="132,226,0,0" HorizontalContentAlignment="Right" VerticalAlignment="Top" Width="376" Height="32" Foreground="AntiqueWhite" FontWeight="Bold" FontSize="15" RenderTransformOrigin="0.5,0.5" FontFamily="OCR A Extended" TextOptions.TextHintingMode="Animated" TextOptions.TextFormattingMode="Display">
+        <Label Name="Category" Content="Category" HorizontalAlignment="Left" Margin="132,226,0,0" HorizontalContentAlignment="Right" VerticalAlignment="Top" Width="376" Height="32" Foreground="AntiqueWhite" FontWeight="Bold" FontSize="15" RenderTransformOrigin="0.5,0.5" TextOptions.TextHintingMode="Animated" TextOptions.TextFormattingMode="Display">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -34,8 +34,8 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <CheckBox Name="AlternateOpening" Content="Open in explorer" ToolTip="Select this if you want to open the folders in explorer window" HorizontalAlignment="Left" Margin="41,459,0,0" VerticalAlignment="Top" Height="31" Width="185" FontSize="15" FontWeight="ExtraBold" FontFamily="OCR A Extended" VerticalContentAlignment="Center" Foreground="AntiqueWhite"/>
-        <Label  Content="Boxo The Explorer" HorizontalContentAlignment="Left" Foreground="AntiqueWhite" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top" Width="167" Height="31"  FontFamily="OCR A Extended"/>
+        <CheckBox Name="AlternateOpening" Content="Open in explorer" ToolTip="Select this if you want to open the folders in explorer window" HorizontalAlignment="Left" Margin="41,459,0,0" VerticalAlignment="Top" Height="31" Width="185" FontSize="15" FontWeight="ExtraBold" VerticalContentAlignment="Center" Foreground="AntiqueWhite"/>
+        <Label  Content="Boxo The Explorer" HorizontalContentAlignment="Left" Foreground="AntiqueWhite" FontWeight="Bold" FontSize="15" HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top" Width="167" Height="31"/>
         <Image Name="DeleteContents"    ToolTip="Delete this library"   HorizontalAlignment="Left" Source="Resources/btn_Repeat_P.png"  MouseLeftButtonDown="Image_MouseLeftButtonDown" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" Height="30" Margin="07,399,0,0" VerticalAlignment="Top" Width="30"/>
         <Image Name="Toggle"    ToolTip="Toggle Windows"             Height="30" Width="30" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,459,650.2,0" Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" Source="Resources\btn_Advance_P.png"/>
 
@@ -45,7 +45,7 @@
         <Image Name="MuteOn"    ToolTip="Mute off"               Height="35" Width="35" VerticalAlignment="Top" HorizontalAlignment="Left"  Margin="419,10,0,0" Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" Source="Resources\btn_mute_P.png"  Visibility="Hidden"/>
         <Image Name="Minimize"  ToolTip="Minimize to Widget"    Height="20" Width="20" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,35,00" Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" Source="Resources\btn_restore_P.png" />
         <Image Name="Close"     ToolTip="Exit"                  Height="20" Width="20" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,10,13,00" Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" Source="Resources\btn_close_P.png"/>
-        <Label Name="LibraryLabel" Content="Libraries" HorizontalAlignment="Left" Margin="-123,235,0,0" HorizontalContentAlignment="Right" VerticalAlignment="Top" Width="292" Height="32" Foreground="AntiqueWhite" FontWeight="Bold" FontSize="15" RenderTransformOrigin="0.5,0.5" FontFamily="OCR A Extended" TextOptions.TextHintingMode="Animated" TextOptions.TextFormattingMode="Display">
+        <Label Name="LibraryLabel" Content="Libraries" HorizontalAlignment="Left" Margin="-123,235,0,0" HorizontalContentAlignment="Right" VerticalAlignment="Top" Width="292" Height="32" Foreground="AntiqueWhite" FontWeight="Bold" FontSize="15" RenderTransformOrigin="0.5,0.5" TextOptions.TextHintingMode="Animated" TextOptions.TextFormattingMode="Display">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
