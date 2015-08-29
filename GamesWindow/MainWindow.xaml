@@ -8,7 +8,7 @@
         </Grid.Background>
         <ListBox Name="Libraries" FontSize="20" ScrollViewer.HorizontalScrollBarVisibility="Hidden" FontWeight="ExtraBold" Foreground="AntiqueWhite" Background="Transparent" BorderThickness="0" BorderBrush="Transparent" HorizontalAlignment="Left" Height="332" Margin="47,97,0,0" VerticalAlignment="Top" Width="234" SelectionChanged="Libraries_SelectionChanged" TextOptions.TextHintingMode="Animated" TextOptions.TextFormattingMode="Display">
             <ListBoxItem HorizontalAlignment="Center" Name="AddNew" HorizontalContentAlignment="Center" VerticalAlignment="Center">
-                <TextBox  MouseLeftButtonDown="TextBlock_MouseLeftButtonDown" TextAlignment="Center" Foreground="AntiqueWhite" FontWeight="ExtraBold" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Name="AddNewButton" BorderThickness="0" BorderBrush="Transparent" TextWrapping="WrapWithOverflow" TextOptions.TextHintingMode="Animated" Background="Transparent" PreviewKeyDown="AddNewButton_PreviewKeyDown" AutoWordSelection="True" IsEnabled="True" Text="+" LostFocus="AddNewButton_LostFocus" GotFocus="AddNewButton_GotFocus" Height="Auto"/>
+                <TextBox TextAlignment="Center" Foreground="AntiqueWhite" FontWeight="ExtraBold" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" Width="220" Name="AddNewButton" BorderThickness="0" BorderBrush="Transparent" TextWrapping="WrapWithOverflow" TextOptions.TextHintingMode="Animated" Background="Transparent" PreviewKeyDown="AddNewButton_PreviewKeyDown" AutoWordSelection="True" IsEnabled="True" Text="+" LostFocus="AddNewButton_LostFocus" GotFocus="AddNewButton_GotFocus" Height="Auto"/>
             </ListBoxItem>
         </ListBox>
 
